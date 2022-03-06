@@ -1,0 +1,1017 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200;300;600&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@100;300&family=Spectral+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200;300;600&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@100&family=Spectral+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200;300;600&family=Roboto+Slab:wght@200&family=Roboto:wght@100&family=Spectral+SC:wght@300&display=swap');
+:root {
+    --one-green: #1F2326;
+    --two-green: #1E3030;
+    --three-green: #1A494F;
+    --one-yellow: #FE9E05;
+    --one-white: #D5DBE7;
+    --one-shadow: rgba(0, 0, 0, 0.25);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+body{
+    position: relative;
+    object-fit: cover;
+    height: calc(100vh - 100px); /*100vh tam ekran yüksekliği, 100px gereksiz uzamaması için çıkarılan değer çünkü sayfa gereksiz scrollbar getiriyor*/
+    background-image: url("img/8.jpg");
+    z-index:0;
+    background-repeat:repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    background-image: url("img/8.jpg");
+    z-index:3;
+    background-repeat:repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height:722px;
+    display:flex;
+    z-index: 0;
+}
+
+/*menü olan kısım başlangıç*/
+.header .info{
+    margin-left:-5%;
+    width:60%;
+    background-color:var(--one-green);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.header .info .menu{
+    width: 100%;
+    padding:15px 10px 0 200px ;
+    height: auto;
+    display:flex;
+    text-align: center;
+    justify-content:space-between;
+    margin-bottom:100px;
+}
+.header .info .menu a{
+    display: block;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-family: 'Roboto Slab', serif;
+}
+.header .info .menu a:hover{opacity: 0.5;}
+.header .info .rezervasyon{
+    max-width: 400px;
+    height:200px;
+    margin:0 auto;
+}
+.header .info .rezervasyon .duyuru{
+    color:#ffffff;
+    font-size:25px;
+    font-family: "Spectral SC", serif;
+    letter-spacing: 5px;
+
+}
+.header .info .rezervasyon img{
+    margin-left:340px;
+    margin-top:10px;
+    width: 50px;
+    height: 50px;
+}
+.header .info .rezervasyon button{
+    display: block;
+    border:1px solid #ffffff;
+    background: transparent;
+    width: 291.24px;
+    height: 53px;
+    color:#ffffff;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size:18px;
+    transition: all .6s;
+    margin-left:40px;
+    margin-top:10px;
+}
+.header .info .rezervasyon button:hover{
+    background: #ffffff;
+    width: 292px;
+    height: 53px;
+    color:var(--one-green);
+    letter-spacing: 5px;
+    font-size:19px;
+    text-shadow: 0 4px 4px var(--one-shadow);
+    cursor: pointer;
+}
+.header .bayrak{
+    position:absolute;
+    left:33.5%;
+    z-index: 5;
+
+}
+.header .bayrak .by{
+    height:700px;
+    z-index: 3;
+}
+.header .bayrak .str1{
+    display: block;
+    position: absolute;
+    bottom:-2%;
+    left:-6%;
+    height: 510px;
+    width: 215px;
+    z-index: -1;
+}
+.header .bayrak .str2{
+    position: absolute;
+    top:-5%;
+    left:-6%;
+    height: 115px;
+    width: 215px;
+    z-index: -1;
+}
+.header .bayrak .lg{
+    display: block;
+    position: absolute;
+    top:7%;
+    left:-75px;
+    height: 200px;
+    width: 340px;
+    z-index: 0;
+}
+.header .bayrak .form{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left:13%;
+
+}
+.header .bayrak .form input{
+    border-bottom:1px solid #ffffff;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-bottom:20px;
+    background: transparent;
+    padding-bottom: 5px;
+}
+::placeholder{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.header .bayrak .form button{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    width: 80px;
+    height: 20px;
+    background: transparent;
+    border:1px solid #ffffff;
+    margin-left:auto;
+    transition: all .6s;
+}
+.header .bayrak .form button:hover{
+    background: #ffffff;
+    color:var(--one-green);
+    cursor: pointer;
+    text-shadow: 0 4px 4px var(--one-shadow);
+    font-weight: bolder;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+
+}
+.header .bayrak .form .center{
+    display:flex;
+    justify-content: center;
+}
+.header .bayrak .form .center span{
+    display:block;
+    font-family: 'Roboto Slab', serif;
+    color:#ffffff;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-top:-30%;
+}
+.header .bayrak .language{
+    position: absolute;
+    top:2%;
+    left:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #ffffff;
+    background: transparent;
+    width: 130px;
+    height: 30px;
+
+}
+.header .bayrak .language img{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.header .bayrak .language span{
+   color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    font-size: 10px;
+
+}
+    /*menü olan kısım bitiş*/
+
+/*resim olan kısım başlangıç*/
+.header .img{
+    position:relative;
+    flex:1;
+    height: 100%;
+    z-index: -3;
+}
+.header .img img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+.header .img .align{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    padding-left:20px;
+}
+.header .head{
+    position:absolute;
+    color:#ffffff;
+    font-size:55px;
+    font-family: "Spectral SC", serif;
+    letter-spacing:8px;
+    display: block;
+    text-shadow: 0 4px 4px var(--one-shadow);
+}
+/*resim olan kısım bitiş*/
+
+/*günün menüsü başlangıç*/
+.header .info .gnmenu{
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+}
+.header .info .gnmenu .header{
+    display:flex;
+    justify-content: center;
+    height:auto;
+}
+.header .info .gnmenu .header .czg{
+    width: 180px;
+    height: 1px;
+    background: #ffffff;
+}
+.header .info .gnmenu .header span{
+    display:block;
+    margin-left:20px;
+    margin-right:20px;
+    color:#ffffff;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 5px;
+    position: relative;
+    top:-8px;
+    font-size:18px;
+}
+.header .info .gnmenu .header-two{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.header .info .gnmenu .header-two span{
+    font-family: 'Roboto Slab', serif;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    font-size:15px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.header .info .gnmenu .header-two img{
+    width:10px;
+    height: 10px;
+    position:relative;
+    top:15px;
+}
+.header .info .gnmenu .onne{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(3,1fr);
+    text-align: center;
+    justify-content: center;
+    padding-left: 200px;
+
+}
+.header .info .gnmenu .twoo{
+    /*display: grid;*/
+    /*grid-gap: 20px;*/
+    /*grid-template-columns:repeat(3,1fr);*/
+    position: relative;
+    top:-98px;
+    left:-10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+.header .info .gnmenu .yemek{margin-top:100px;}
+.header .info .gnmenu .yemek .eat{
+     display: flex;
+     flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+.header .info .gnmenu .yemek .eat .top{
+    position: absolute;
+    top:67%;
+    width:150px;
+    height: 150px;
+}
+.header .info .gnmenu .yemek .eat span{
+    font-family: 'Roboto Slab', serif;
+    width: 100px;
+    height: auto;
+    color:#ffffff;
+    position: absolute;
+    bottom:1.5%;
+}
+/*.header .info .gnmenu .yemek .green{*/
+/*    width:180px;*/
+/*    height:90px;*/
+/*    background: transparent;*/
+/*    border-top:25px solid transparent;*/
+/*    border-bottom:25px solid transparent;*/
+/*    border-left:100px solid var(--one-yellow);*/
+/*    transform: rotate(-90deg);*/
+/*}*/
+
+.header .info .gnmenu .yemek .onne .eat .br{
+    position: absolute;
+    width:130px;
+    height:100px;
+}
+/*günün menüsü bitiş*/
+
+.content{
+    display: flex;
+    width:100%;
+    height: 700px;
+    margin-top: -10px;
+    padding-top:50px;
+    padding-left:1%;
+    padding-right:10px ;
+    padding-bottom:50px;
+    z-index: 4;
+}
+.content .img{
+    width:45%;
+    height: 600px;
+    position:relative;
+}
+.content .img img{
+    width:100%;
+    height: 100%;
+
+}
+.btn{
+    width: 100%;
+    display: flex;
+    position:absolute;
+    bottom:15px;
+    text-align: center;
+    justify-content: center;
+}
+.content .img button{
+    display: block;
+    border:1px solid #ffffff;
+    background: transparent;
+    width:280px;
+    height: 40px;
+    color:#ffffff;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size:10px;
+    transition: all .6s;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.content .img button:hover{
+    background: #ffffff;
+    color:var(--one-green);
+    letter-spacing: 3px;
+    font-size:11px;
+    text-shadow: 0 4px 4px var(--one-shadow);
+    cursor: pointer;
+}
+.content .online{
+    margin-left:2%;
+    width:55%;
+    height: 100%;
+    position:relative;
+    background: var(--one-green);
+    z-index: 5;
+
+}
+.content .online .efct{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    background: transparent;
+    border:1px solid var(--one-green);
+    margin-left:-15px;
+    margin-top:15px;
+}
+.content .online .icerik{
+    position: relative;
+    width:96%;
+    height:96%;
+    margin:2% 2%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+.content .online .icerik .head{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   width: 100%;
+   height: auto;
+   font-family: "Spectral SC", serif;
+   letter-spacing: 6px;
+   font-size: 25px;
+   color:#ffffff;
+    margin-top: 3%;
+}
+.content .online .icerik .head-two{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   width: 100%;
+   font-family: 'Roboto Slab', serif;
+   letter-spacing: 6px;
+   font-size: 20px;
+   color:#ffffff;
+    margin-top:8%;
+}
+.content .online .icerik .icon{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    width:100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 15%;
+}
+.content .online .icerik .icon .ic{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    width:23%;
+    height:200px;
+}
+.content .online .icerik .icon .ic img{
+    width:85%;
+    height: 55px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:18%;
+}
+.content .online .icerik .icon .ic span{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    color:#ffffff;
+    letter-spacing:4px;
+    display: block;
+    margin-bottom:20%
+}
+.content .online .icerik .icon .ic button{
+    margin-top: 15%;
+    background: transparent;
+    border:1px solid #ffffff;
+    width:100%;
+    height:15%;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size:10px;
+    letter-spacing: 2px;
+    transition: all .6s;
+
+}
+.content .online .icerik .icon .ic button:hover{
+    background:#ffffff;
+    color:var(--one-green);
+    font-size:11px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.content .online .icerik .btnSprs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.content .online .icerik .btnSprs button{
+    margin-top:7%;
+    background: transparent;
+    border:1px solid #ffffff;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: block;
+    width:280px;
+    height: 40px;
+    font-size:10px;
+    transition: all .6s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.content .online .icerik .btnSprs button:hover{
+   background: #ffffff;
+   color:var(--one-green);
+   letter-spacing: 4px;
+   cursor: pointer;
+    font-size:11px;
+    text-shadow: 0 4px 4px var(--one-shadow);
+}
+
+.rz{
+    width:100%;
+    height: 500px;
+    margin-top:-15px;
+    position:relative;
+    padding-right: 1%;
+    padding-left: 1%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 0;
+    background-image: url("img/8.jpg");
+
+}
+.rz img{
+    width:100%;
+    height: 100%;
+}
+.rz .brdr{
+    position: absolute;
+    border:1px solid #ffffff;
+    background: transparent;
+    width:96%;
+    height: 90%;
+    margin:2% ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.rz .brdr span{
+    display:block;
+    color:white;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 8px;
+    position: relative;
+    top:80px;
+    font-size:35px;
+    text-shadow: 0 4px 4px var(--one-shadow);
+}
+.rz .brdr .ort{
+    margin-top:15%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width:90%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.rz .brdr .ort .submit{
+    width:150px;
+    height: 40px;
+    border:1px solid #ffffff;
+    background: transparent;
+    display: flex;
+    color:#ffffff;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    padding-top:12px;
+    padding-left:10px;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.rz .brdr .ort .submit img{width: 8px;height: 10px;}
+.rz .brdr .ort .back{
+    width:125px;
+    height: 40px;
+    border:none;
+    background: #ffffff;
+    color:var(--one-green);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 4px 4px var(--one-shadow);
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-top:12px;
+    transition: all .6s;
+}
+.rz .brdr .ort .back:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background: transparent;
+    border: 1px solid #ffffff;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+
+.menuu{
+    width: 100%;
+    height: 850px;
+    z-index: 1;
+    position: relative;
+    object-fit: cover;
+    background-image: url("img/8.jpg");
+    background-repeat:repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top:-10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuu .book{
+    display: flex;
+}
+.menuu .book .img img{
+    width:600px;
+    height:100%;
+    position: relative;
+}
+.menuu .book .img .sy{
+    position: absolute;
+    width:600px;
+    height:790px;
+    background:#0000008c;
+    top:0;
+    margin-top:2%;
+
+}
+.menuu .book .img .sy2{
+    position: absolute;
+    width:600px;
+    height:790px;
+    background:#0000008c;
+    top:0;
+    margin-top:2%;
+    opacity: 0.5;
+
+}
+
+.bltn{
+    width:100%;
+    height:400px;
+    z-index: 0;
+    margin-top:-1%;
+}
+.bltn .black{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height:100%;
+    background: #0000008c;
+}
+.bltn .black .slogan{
+    width:60%;
+    height: 100%;
+    z-index: 1;
+    display:flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 5%;
+}
+.bltn .black .slogan span{
+    display:block;
+    color:#ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: initial;
+    font-size:25px;
+    letter-spacing: 6px;
+    margin-top:3%;
+}
+.bltn .black .slogan img{
+    position: absolute;
+    bottom:40%;
+    left: 23%;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.bltn .black .slogan .uye{
+    position: absolute;
+    bottom:30%;
+    left: 28%;
+}
+.bltn .black .slogan .uye .mail{
+    width:160px;
+    height: 40px;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border:1px solid #ffffff;
+    border-right:none;
+    background: transparent;
+    padding-left: 15px;
+    text-align: left;
+}
+.bltn .black .slogan .uye .yol{
+    width:100px;
+    height: 40px;
+    color:var(--one-green);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background:#ffffff;
+    font-weight: bold;
+    border: none;
+    text-shadow: 0 4px 4px var(--one-shadow);
+    transition: all .6s;
+}
+.bltn .black .slogan .uye .yol:hover{
+    box-shadow: 0 12px 16px 0 rgba(255,255,255,0.2), 0 17px 50px 0 rgba(255,255,255,0.2);
+    cursor:pointer;
+}
+.bltn .black .slogan .uye .yol:hover .mail{
+    text-shadow: 0 4px 4px var(--one-shadow);
+    background: #ffffff;
+    color:var(--one-green);
+}
+.bltn img{
+    position:absolute;
+    width: 100%;
+    height:400px;
+
+}
+.bltn .black .logo{
+     padding-top: 5%;
+     width: 40%;
+     height: 100%;
+     display: flex;
+     justify-content:right;
+     text-align: center;
+ }
+.bltn .black .logo img{
+    width: 20%;
+    height: 65%;
+}
+
+.social-bar{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:400px;
+    background: rgba(31,35,38, 0.8);/*rgba yeşil gelmesi gerek*/
+    padding-top:2.5%;
+    align-items: center;
+}
+.social-bar .header{
+    display:flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-bottom:2%;
+    z-index: 5;
+}
+.social-bar .header span{
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: revert;
+    color:#ffffff;
+    letter-spacing:6px;
+    margin-right:3%;
+
+}
+.social-bar .header img{
+    position:absolute;
+    bottom: 85%;
+    right:43%;
+    width: 18px;
+    height: 18px;
+}
+.social-bar .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.social-bar .button button{
+    width:100px;
+    height:30px;
+    display: block;
+    background: transparent;
+    border:1px solid #ffffff;
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    transition: all .6s;
+}
+.social-bar .button button:hover{
+    background: #ffffff;
+    color:var(--one-green);
+    cursor: pointer;
+}
+.social-bar .galeri{
+    display: flex;
+    width: 98%;
+    height: auto;
+    padding-left: 1%;
+
+}
+.social-bar .galeri img{
+    margin-top: 5%;
+    width: 11%;
+    height: 170px;
+    transition: all .6s;
+    z-index: 0;
+}
+.social-bar .galeri img:hover{
+    width: 11.5%;
+    height:172px ;
+    z-index:2;
+    transform: scale(1.2);
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background: var(--one-green);
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+.footer .inf{
+    display: flex;
+    flex-direction: column;
+}
+.footer .inf .finish{
+    color:#ffffff;
+    font-size: 25px;
+    font-family: "Spectral SC", serif;
+    letter-spacing: 4px;
+    margin-bottom:50px;
+
+}
+.footer .inf .lb{display: flex;margin-bottom: 20px;}
+.footer .inf .lb label{
+    color:var(--one-yellow);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-right: 5px;
+    letter-spacing: 2px;
+}
+.footer .inf .lb span{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+
+}
+.footer .inf .wp{
+    display: flex;
+    margin-top:100px;
+    align-items: center;
+}
+.footer .inf .wp img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.footer .inf .wp span{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+.footer .sef{
+    display: flex;
+    flex-direction: column;
+}
+.footer .sef .img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.footer .sef img{
+    width: 90px;
+    height: 100px;
+    margin-left:5px;
+}
+.footer .sef .head{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.footer .sef .head span{
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    color:#ffffff;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+.footer .sef .head .czg{
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #ffffff;
+}
+.footer .sef .logo{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.footer .sef .logo img{
+    display: block;
+    width: 250px;
+    height: 125px;
+}
+.footer .sef .social-media{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footer .sef .social-media img{
+    width: 15px;
+    height: 15px;
+    margin-left:10px;
+}
+.footer .sef .social-media img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.footer .map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .map .hakkımızda{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .map .hakkımızda span{
+    color:#ffffff;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.footer .map .hakkımızda .mrg{margin-left: 22px;margin-right: 22px;}
+.footer .map .frame{display: flex;justify-content: center;align-items: center}
+.footer .map .frame iframe{
+    margin-top:50px;
+    display: block;
+    width:250px;
+    height: 250px;
+    z-index: 2;
+}
+.footer .map .frame .border{
+    margin-left: -230px;
+    margin-bottom: -95px;
+    width:250px;
+    height: 250px;
+    background: transparent;
+    border:1px solid #ffffff;
+    z-index: 0;
+}
